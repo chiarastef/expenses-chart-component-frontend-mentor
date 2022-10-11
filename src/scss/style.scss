@@ -1,0 +1,66 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+// Variables
+@import "variables";
+
+// Reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// General
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: $background;
+}
+
+.container {
+  width: 90%;
+  margin: 70px auto;
+}
+
+// Balance Section
+.balance-el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 21px;
+  border-radius: 8px;
+
+  .balance {
+    color: $light-text;
+  }
+
+  .balance-title {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .balance-amount {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  .logo {
+    width: 57px;
+    height: 38px;
+    background-image: url(../images/logo.svg);
+    background-size: cover;
+  }
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
