@@ -4,7 +4,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ## Link
 
-- Project url (hosted on Netlify)
+- [Project url](https://expenses-chart-frontend-mentor.netlify.app/) (hosted on Netlify)
 
 ## Screenshot
 

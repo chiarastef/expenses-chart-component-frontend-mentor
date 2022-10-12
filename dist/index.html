@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Expenses chart component</title>
-  <link rel="icon" href="favicon-32x32.png"><script defer src="bundle.3bce61261295ae7aaff9.js"></script></head>
+  <link rel="icon" href="favicon-32x32.png"><script defer src="bundle.123e23293464ba4a3cbb.js"></script></head>
   <body>
     <div class="container">
-      <div class="balance-el">
+      <section class="balance-el">
         <div class="balance">
           <h3 class="balance-title">My balance</h3>
           <div class="balance-amount">$921.48</div>
         </div>
         <div class="logo"></div>
-      </div>
+      </section>
+      <section class="spending-chart">
+        <table
+          class="chart charts-css column data-spacing-6 show-heading show-data-on-hover show-labels"
+        >
+          <caption>
+            Spending - Last 7 days
+          </caption>
+          <tbody class="chart-el" id="chart-el"></tbody>
+        </table>
+      </section>
     </div>
     <!-- <div class="attribution">
       Challenge by
