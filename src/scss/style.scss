@@ -15,11 +15,15 @@
 body {
   font-family: "DM Sans", sans-serif;
   background-color: $background;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 90%;
-  margin: 70px auto;
+  max-width: 530px;
 }
 
 // Balance Section
@@ -28,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  padding: 21px;
+  padding: 23px;
   border-radius: 8px;
 
   .balance {
@@ -57,9 +61,9 @@ body {
 
 .spending-info {
   background-color: $light-text;
-  padding: 21px;
+  padding: 28px;
   border-radius: 8px;
-  margin-top: 15px;
+  margin: 15px 0 10px;
 
   // Chart section
   caption {
@@ -74,12 +78,12 @@ body {
     --color: #ec775f;
   }
 
-  .current-day {
-    --color: #76b5bc;
+  .column {
+    height: 220px;
   }
 
-  .charts-css.column .chart-el {
-    height: 220px;
+  .current-day {
+    --color: #76b5bc;
   }
 
   .bar-el:hover {
@@ -98,6 +102,7 @@ body {
 
   .bar {
     border-radius: 4px;
+    transition: all 500ms ease-in-out;
 
     .data {
       position: relative;
@@ -109,6 +114,7 @@ body {
       border-radius: 4px;
       margin-left: -10px;
       margin-right: -10px;
+      transition: all 500ms ease-in-out;
     }
   }
 
@@ -133,6 +139,7 @@ body {
 
       &-amount {
         font-size: 30px;
+        line-height: 100%;
         font-weight: 700;
         color: $primary-text;
         text-align: right;
@@ -161,5 +168,70 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 992px) {
+  .balance-el,
+  .spending-info {
+    border-radius: 20px;
+  }
+
+  .balance-el {
+    padding: 30px;
+
+    .balance-title {
+      font-size: 17px;
+    }
+
+    .balance-amount {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    .logo {
+      width: 74px;
+      height: 50px;
+    }
+  }
+
+  .spending-info {
+    padding: 35px;
+
+    caption {
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+
+    .bar {
+      .data {
+        bottom: 38px;
+        font-size: 16px;
+        padding: 7px;
+      }
+    }
+
+    hr {
+      margin: 26px 0 30px;
+    }
+
+    .month-spending {
+      .month-total-title,
+      .comparison-descr {
+        font-size: 17px;
+      }
+
+      .month-total-amount {
+        font-size: 45px;
+      }
+
+      .comparison-percentage {
+        font-size: 18px;
+      }
+
+      .comparison-descr {
+        margin-top: 4px;
+      }
+    }
+  }
 }
