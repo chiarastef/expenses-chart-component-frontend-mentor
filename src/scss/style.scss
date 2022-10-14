@@ -23,7 +23,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 530px;
+  max-width: 400px;
 }
 
 // Balance Section
@@ -131,7 +131,7 @@ body {
 
     .month-total {
       &-title {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
         color: $secondary-text;
         margin-bottom: 3px;
@@ -154,7 +154,7 @@ body {
       }
 
       &-descr {
-        font-size: 15px;
+        font-size: 14px;
         color: $secondary-text;
       }
     }
@@ -174,63 +174,25 @@ body {
 @media screen and (min-width: 992px) {
   .balance-el,
   .spending-info {
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   .balance-el {
-    padding: 30px;
-
-    .balance-title {
-      font-size: 17px;
-    }
+    padding: 25px;
 
     .balance-amount {
-      font-size: 30px;
-      margin-top: 10px;
-    }
-
-    .logo {
-      width: 74px;
-      height: 50px;
+      font-size: 25px;
     }
   }
 
   .spending-info {
-    padding: 35px;
-
-    caption {
-      font-size: 30px;
-      letter-spacing: 1px;
-    }
-
-    .bar {
-      .data {
-        bottom: 38px;
-        font-size: 16px;
-        padding: 7px;
-      }
-    }
-
     hr {
-      margin: 26px 0 30px;
+      margin: 20px 0 23px;
     }
 
     .month-spending {
-      .month-total-title,
-      .comparison-descr {
-        font-size: 17px;
-      }
-
       .month-total-amount {
-        font-size: 45px;
-      }
-
-      .comparison-percentage {
-        font-size: 18px;
-      }
-
-      .comparison-descr {
-        margin-top: 4px;
+        font-size: 35px;
       }
     }
   }
