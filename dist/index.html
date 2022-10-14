@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Expenses chart component</title>
-  <link rel="icon" href="favicon-32x32.png"><script defer src="bundle.123e23293464ba4a3cbb.js"></script></head>
+  <link rel="icon" href="favicon-32x32.png"><script defer src="bundle.b7a4c277fb0c1566b214.js"></script></head>
   <body>
     <div class="container">
       <section class="balance-el">
@@ -15,22 +15,40 @@
         </div>
         <div class="logo"></div>
       </section>
-      <section class="spending-chart">
-        <table
-          class="chart charts-css column data-spacing-6 show-heading show-data-on-hover show-labels"
-        >
-          <caption>
-            Spending - Last 7 days
-          </caption>
-          <tbody class="chart-el" id="chart-el"></tbody>
-        </table>
+      <section class="spending-info">
+        <div class="spending-chart">
+          <table
+            class="chart charts-css column data-spacing-6 show-heading show-data-on-hover show-labels"
+          >
+            <caption>
+              Spending - Last 7 days
+            </caption>
+            <tbody class="chart-el" id="chart-el"></tbody>
+          </table>
+        </div>
+        <hr />
+        <div class="month-spending">
+          <div class="month-total">
+            <h3 class="month-total-title">Total this month</h3>
+            <div class="month-total-amount">$478.33</div>
+          </div>
+          <div class="comparison">
+            <div class="comparison-percentage">+2.4%</div>
+            <div class="comparison-descr">from last month</div>
+          </div>
+        </div>
       </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.linkedin.com/in/chiarastefanelli/?locale=en_US"
+          target="_blank"
+          >Chiara Stefanelli</a
+        >.
+      </div>
     </div>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.linkedin.com/in/chiarastefanelli/?locale=en_US" target="_blank">Chiara Stefanelli</a>.
-    </div> -->
   </body>
 </html>
